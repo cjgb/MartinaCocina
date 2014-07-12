@@ -1,0 +1,135 @@
+<!DOCTYPE>
+<HTML>    
+<head>                 
+	<title>Martina Cocina </title>
+	<link rel="shortcut icon" href="imagenes/favicon.icon"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/tile.stamen.js?v1.2.4"></script>
+	<script src="scripts/unslider.min.js"></script>
+	
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Alegreya+Sans:300italic,500italic' rel='stylesheet' type='text/css'>     
+	<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuYEtsD5nDlSSD5pSGwFPtywJC-BN75N0&sensor=false">
+	</script>
+</head>
+
+<body id="index" onload="initialize()">	
+<div id="pagina">
+		<div id="menu">
+			<div id="line"></div>    
+			<div id="content">
+				<a href="index.html"><div id="logo"></div></a>
+				<ul id="navegacion"> 
+					<div>
+						<li id="nosotros" target="nosotros" class="nav_link"><a href="">Nosotros</a></li> 
+						<li class="nav_separador"></li>
+						<li id="galeria" target="galeria" class="nav_link"><a href="">Galer&iacute;a</a></li>
+						<li class="nav_separador"></li>
+						<li id="ubicacion" target="ubicacion" class="nav_link"><a href="">Ubicaci&oacute;n</a></li>
+						<li class="nav_separador"></li>
+						<li id="novedades" target="novedades "class="nav_link"><a href="">Novedades</a></li>					
+					</div>
+				</ul>
+				<ul id="social">
+					<a href=""><li id="mail" target="contacto" class="social nav_link"></li></a>
+					<a target="_blank" href="http://www.facebook.com/martinacocina.es"><li id="facebook" class="social"></li></a>
+					<a target="_blank" href="https://twitter.com/martinacocina"><li id="twitter" class="social"></li></a>
+					<a target="_blank" href="https://plus.google.com/+MartinaCocinaMadrid"><li id="google" class="social"></li></a>
+				</ul>
+			</div>
+		</div>         
+		<div id="encabezado">
+			<div id="imagen"></div>
+		</div>
+	    <div id="nosotros" class="seccion">   
+		<div class="titulo">
+			<h1>Nosotros</h1>
+			<h3>Martina Cocina, un lugar con encanto</h3>
+		</div>
+	    <div class="contenido">
+
+		<p>Queremos ofrecerte, sobre todo, un lugar con encanto, diferente, atractivo, moderno, relajado, en el que puedas disfrutar momentos agradables.</br>
+		Por la mañana puedes acompañarlos con nuestros desayunos: zumos naturales, respostería casera, croissants recién salidos del horno, alfajores,...</br>
+		También puedes comer y cenar con nosotros. Tenemos quiches de mil tipos, empanadillas argentinas, variedad de ensaladas y, para los golosos, probablemente la mejor tarta de zanahoria de Madrid. ¡Y no lo decimos nosotros! </p>
+		</div>	
+	    </div>
+		<div id="galeria" class="seccion">
+			<div class="titulo">
+				<h1>Galer&iacute;a</h1>
+				<h3>Disfruta de un lugar con encanto y siéntete como en casa</h3>
+			</div>   
+			<div class="contenido">   
+				<div id="galeria-container">
+			   	 <div id="galeria-imagenes"> 
+						<a href="#" class="unslider-arrow prev"></a>
+						<a href="#" class="unslider-arrow next"></a>
+						<ul id="slider">
+							<li id="slide1"></li>
+							<li id="slide2"></li>
+							<li id="slide3"></li>
+							<li id="slide4"></li>
+							<li id="slide5"></li>
+							<li id="slide6"></li>
+							<li id="slide7"></li>
+							<li id="slide8"></li>
+							<li id="slide9"></li>
+							<li id="slide10"></li>
+							<li id="slide11"></li>
+							<li id="slide12"></li>
+						</ul>     
+					</div> 
+				</div>
+			</div>
+		</div>
+		<div id="ubicacion" class="seccion">
+			<div class="titulo">
+				<h1>Ubicaci&oacute;n</h1>
+				<h3>Estamos en en Plaza de Cascorro 11, 28005 Madrid</h3>
+			</div>         
+			<div class="contenido">      
+				
+				<div id="mapa-ubicacion" class="map"></div>
+			</div>
+		</div>
+		<div id="novedades" class="seccion">
+			<div class="titulo">
+				<h1>Novedades</h1>
+				<h3>Estamos en Plaza de Cascorro 11, 28005 Madrid</h3>
+			</div>        
+			 <div class="contenido">      
+				<div id="novedad">
+					<p>dasñasfsaa</p>
+				</div>
+				<div id="novedad">
+					<p>dasñasfsaa</p>
+				</div>
+				<div id="novedad">
+					<p>dasñasfsaa</p>
+				</div>
+				
+			</div>
+		</div>
+		<div id="contacto" class="seccion">
+			<div class="titulo black">
+				<h1>Contacto</h1>
+				<h3>Envíanos tu consulta y nos pondremos en contacto contigo.</h3>
+			</div>
+			<div class="contenido">
+				<form id="formulario_contacto">
+					<input type="text" id="nombre" name="nombre" placeholder="NOMBRE Y APELLIDO"></input>
+					<input type="text" id="correo" name="correo" placeholder="CORREO ELECTRÓNICO"></input>
+					<textarea id="mensaje" name="mensaje" placeholder="MENSAJE"></textarea>
+					<input type="submit" id="enviar" value="ENVIAR"></input>
+				</form>
+			</div>
+		</div>
+		<div id="footer">
+			<h3>MARTINA COCINA . info@martinacocina.es .  +34 910834380 .</h3>
+		</div>
+</div>                                   
+<script src="scripts/script.js"></script>
+
+<!-- <script src="scripts/modestmaps.js"></script> -->
+</body>	
+</HTML>
