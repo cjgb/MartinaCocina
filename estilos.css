@@ -67,6 +67,7 @@ h3{
 	width: 455px;
 	margin: 0 auto;
 }
+
 #menu #content #navegacion li{
 	display: inline-block;
 	height: 100px;                                      
@@ -301,22 +302,24 @@ a.unslider-arrow.next{
 }
 
 #novedades .contenido{
-	height: 400px;
+	height: 450px;
 	text-align:center;
 }
 
 #novedades .contenido .centra_contenido{
 	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	width: 810px;
 }
 
-#novedades .contenido #novedad {
+#novedades .contenido .novedad {
 	float: left;
 	width: 250px;
 	padding: 10px;
 }
 
-#novedades .contenido #novedad p{
+#novedades .contenido .novedad p{
         display: block;
         padding-top: 10px;
         width: 230px;
@@ -326,8 +329,8 @@ a.unslider-arrow.next{
         font-size: 16px;
         text-align: center;
         letter-spacing: 1px;
-        line-height: 30px;
-        padding-bottom: 70px;
+        line-height: 18px;
+        padding-bottom: 10px;
 }
 
 #contacto{
