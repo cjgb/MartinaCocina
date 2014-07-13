@@ -1,7 +1,20 @@
 <?php
-$nombrePOST = $_POST['nombre'];    
-$correoPOST = $_POST['correo'];        
-$mensajePOST = $_POST['mensaje'];
+
+//check if its an ajax request, exit if not
+if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+	//exit script outputting json data
+	$output = json_encode(
+	array(
+		'type'=>'error', 
+		'text' => 'Request must come from Ajax'
+	));
+
+        die($output);
+} 
+
+$nombrePOST  = filter_var($_POST['nombre'],   FILTER_SANITIZE_STRING);    
+$correoPOST  = filter_var($_POST['correo'],   FILTER_SANITIZE_EMAIL);        
+$mensajePOST = filter_var($_POST['consulta'], FILTER_SANITIZE_STRING);
 $to = "info@martinacocina.es";
 
 $headers = 'From: '.$nombrePOST.' <'.$correoPOST.">\r\n".
