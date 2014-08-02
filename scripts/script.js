@@ -113,18 +113,17 @@ $(".nav_link").click(function(e){
 		$('html, body').animate({scrollTop : $auxScroll},800);
 	}                                
 });    
-$(document).scroll(function( ){   
+$(document).scroll(function( ){  
 	var actualSection = 0;
 	var auxPosition = $(this).scrollTop();
 	for (index = 0; index < elementsTitle.length; ++index) {
-	    if(auxPosition >= elementsTitle[index]){
+		if(auxPosition >= elementsTitle[index]){
 			actualSection = index;
 		}
 	}                                                            
-		$(".nav_link:eq("+actualSection+")").addClass("arrowed");
-		$(".nav_link:not(:eq("+actualSection+"))").removeClass("arrowed");
-   	
-	
+	$(".nav_link:eq("+actualSection+")").addClass("arrowed");
+	$(".nav_link:not(:eq("+actualSection+"))").removeClass("arrowed");
+
 });
 $("#enviar").click(function(e){
 	e.preventDefault();

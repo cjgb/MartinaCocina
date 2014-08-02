@@ -6,6 +6,9 @@ a, p{
 	color: #383033;
 	font-family: "Josefin Sans", sans-serif;
 }    
+.micro-cut{
+	display: none;
+}
 h1, h2{         
 	margin: 0;
 	padding: 0;
@@ -101,6 +104,10 @@ h3{
 	background-repeat: no-repeat;   
 	height: 100px;
 }     
+#menu #content #navegacion #contacto,
+#menu #content #navegacion #contacto-sep{
+	display: none;
+}
 #menu #content #social{
 	display: inline-block;
 	float: right;
@@ -112,10 +119,13 @@ h3{
 #menu #content #social li.social{
 	display: inline-block;
 	width: 38px;
-	height: 38px;
-	background-image: URL("imagenes/social4.jpg");
+	height: 39px;
+	background-image: URL("imagenes/social4.png");
 	background-position: -2px 0px;
 	background-repeat: no-repeat;
+}
+#menu #content #social li.social:hover{	
+	background-image: URL("imagenes/social4_off.png");
 }
 #menu #content #social li#facebook{
 	background-position: -48px 0px;
@@ -292,6 +302,9 @@ a.unslider-arrow.next{
 #slide12{
 	background-image: URL("imagenes/12.jpg");
 }
+#ubicacion{
+	height: 650px;
+}
 #mapa-ubicacion{
 	width: 100%;
 	height: 500px;  
@@ -302,7 +315,7 @@ a.unslider-arrow.next{
 }
 
 #novedades .contenido{
-	height: 450px;
+	height: 490px;
 	text-align:center;
 }
 
@@ -319,6 +332,11 @@ a.unslider-arrow.next{
 	padding: 10px;
 }
 
+#novedades .contenido .novedad h1{
+	color: #ad9844;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
 #novedades .contenido .novedad p{
         display: block;
         padding-top: 10px;
@@ -382,6 +400,9 @@ a.unslider-arrow.next{
 #contacto form{
 	padding-bottom: 60px;
 }  
+#footer-responsive{
+	display: none;
+}
 #footer{     
 	padding-top: 35px;           
 	height: 51px;
@@ -395,4 +416,388 @@ a.unslider-arrow.next{
 	font-size: 21px;
 	font-style: italic;
 	font-weight: 300;
+}
+
+/***********************************************
+************************************************
+********* Screen size customization ************
+***********************************************/   
+
+/***********************************************
+*********** 768 px (tablet size) ***************
+***********************************************/
+@media only screen and (min-width: 767px) and (max-width: 1199px){
+	body{
+		/*background: red;*/
+	}
+	#encabezado{
+		height: 380px;
+	}
+	#encabezado #imagen{
+		width: 768px;
+		height: 380px;
+		background-size: 100%;
+		background-image: URL("imagenes/encabezado-768.png");
+	}
+	#menu #content{
+		width: 100%;
+	}
+	#menu #content #logo{
+		margin-left: 50px;
+	}
+	#menu #content #navegacion div{
+		/*margin: 0;
+		margin-left: 75px;*/
+		position: absolute;
+		right: 50px;
+		top: 35px;
+		margin: 0;
+		width: 453px;
+	}
+	#menu #content #social{
+		position: absolute;
+		right: 50px;
+		top: 25px;
+		margin: 0;
+	}
+	.contenido p{
+		width: 667px;
+	}
+	#galeria-container{
+		width: 667px;
+		height: 405px;
+	}
+	#galeria-imagenes{
+		width: 647px;
+		height: 395px;
+	}
+	a.unslider-arrow{
+		top: 275px;
+	}
+	#galeria-imagenes #slider{
+		height: 405px;
+	}
+	#galeria-imagenes #slider li{
+		width: 647px;
+		background-size: 100%;
+	}
+	#novedades .contenido .novedad{
+		width: 100%;
+	}
+	#novedades .contenido .novedad img{
+		display: none;
+	}
+	#novedades .contenido .novedad h1{
+		width: 100%;
+		text-align: left;
+		font-weight: bold;
+		font-family: 'Josefin Sans', sans;
+		font-size: 24px;
+		color: #AD9844;
+		text-transform: uppercase;
+	}
+	#novedades .contenido .novedad p{
+		width: 100%;
+		text-align: left;
+		font-family: 'Alegreya Sans', sans;
+		font-size: 14px;
+	}
+	#contacto input[type="text"], #contacto textarea,
+	#contacto #enviar{
+		width: 647px;
+	}
+	#contacto .contenido{
+		height: 500px;
+	}
+}
+
+/***********************************************
+*********** 480 px *****************************
+***********************************************/
+@media only screen and (min-width: 479px) and (max-width: 766px){
+	body{
+		/*background: red;*/
+	}
+	.titulo h3{
+		width: 340px;
+		margin: 0 auto;
+	}
+	#encabezado{
+		width: 100%;
+		height: 405px;
+		padding-top: 270px;
+	}
+	#encabezado #imagen{
+		width: 100%;
+		height: 405px;
+		background-size: 130%;
+		background-position-x: 50%;
+		background-image: URL("imagenes/1.png");
+		background-repeat: no-repeat;
+	}
+	#menu{
+		height: 270px;
+	}
+	#menu #content{
+		width: 100%;
+	}
+	#menu #content #logo{
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position-x: 50%;
+		margin: 0;
+	}
+	#menu #content #navegacion{
+		width: 100%;
+	}
+	#menu #content #navegacion div{
+		margin: 0 auto;
+		width: 465px;
+	}
+	#menu #content #navegacion li{
+		height: 70px;
+	}
+	#menu #content #navegacion li a{
+		margin-top: 30px;
+	}
+	#menu #content #navegacion li.nav_separador{
+		height: 70px;
+		background-position: 100% 52px;
+	}
+	#menu #content #navegacion #galeria,
+	#menu #content #navegacion #galeria-sep{
+		display: none;
+	}
+	#menu #content #navegacion #contacto,
+	#menu #content #navegacion #contacto-sep,
+	#menu #content #navegacion #novedades,
+	#menu #content #navegacion #novedades-sep	{
+		display: inline-block;
+	}
+	#menu #content #social{
+		position: absolute;
+		right: 10px;
+		top: 25px;
+		margin: 0;
+	}
+	.contenido p{
+		width: 380px;
+	}
+	#galeria{
+		display: none;
+	}
+	#novedades{
+		/*display: none;*/
+	}
+	#novedades .contenido{
+		height: 510px;
+	}
+	#novedades .contenido .novedad{
+		width: 100%;
+		padding: 0;
+	}
+	#novedades .contenido .centra_contenido{
+		width: 465px;
+	}
+	#novedades .contenido .novedad img{
+		display: none;
+	}
+	#novedades .contenido .novedad h1{
+		width: 100%;
+		text-align: left;
+		font-weight: bold;
+		font-family: 'Josefin Sans', sans;
+		font-size: 24px;
+		color: #AD9844;
+		text-transform: uppercase;
+		padding-top: 30px;
+	}
+	#novedades .contenido .novedad p{
+		width: 100%;
+		text-align: left;
+		font-family: 'Alegreya Sans', sans;
+		font-size: 14px;
+	}
+	#contacto form{
+		padding-top: 10px;
+	}
+	#contacto input[type="text"], #contacto textarea,
+	#contacto #enviar{
+		width: 360px;
+	}
+	#contacto .contenido{
+		height: 500px;
+	}
+	#footer{
+		display: none;
+	}
+	#footer-responsive{
+		display: block;
+		padding-top: 35px;           
+		height: 100px;
+		background-color: #ad9844;
+		
+		color: white; 
+		font-family: "Alegreya Sans", sans-serif;
+		text-align: center;
+	}
+	#footer-responsive h3{
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+		
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 300;
+	}
+}
+
+/***********************************************
+*********** 320 px *****************************
+***********************************************/
+@media only screen and (max-width: 478px){
+	body{
+		/*background: red;*/
+	}
+	.micro-cut{
+		display: initial;
+	}
+	.titulo h3{
+		width: 340px;
+		margin: 0 auto;
+	}
+	#encabezado{
+		width: 100%;
+		height: 360px;
+		padding-top: 300px;
+	}
+	#encabezado #imagen{
+		width: 100%;
+		height: 405px;
+		background-size: 190%;
+		background-position-x: 50%;
+		background-image: URL("imagenes/1.png");
+		background-repeat: no-repeat;
+	}
+	#menu{
+		height: 300px;
+	}
+	#menu #content{
+		width: 100%;
+	}
+	#menu #content #logo{
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position-x: 50%;
+		margin: 0;
+		margin-top: 40px;
+	}
+	#menu #content #navegacion{
+		width: 100%;
+	}
+	#menu #content #navegacion div{
+		margin: 0 auto;
+		width: 370px;
+	}
+	#menu #content #navegacion li{
+		height: 70px;
+	}
+	#menu #content #navegacion li a{
+		margin-top: 30px;
+		font-size: 16px;
+	}
+	#menu #content #navegacion li.nav_separador{
+		height: 70px;
+		background-position: -50% 50px;
+		width: 20px;
+	}
+	#menu #content #navegacion #galeria,
+	#menu #content #navegacion #galeria-sep	{
+		display: none;
+	}
+	#menu #content #navegacion #contacto,
+	#menu #content #navegacion #contacto-sep,
+	#menu #content #navegacion #novedades,
+	#menu #content #navegacion #novedades-sep{
+		display: inline-block;
+	}
+	#menu #content #social{
+		position: absolute;
+		top: 25px;
+		margin: 0;
+		left: 50%;
+		right: auto;
+		padding: 0;
+		margin-left: -82px;
+	}
+	.contenido p{
+		width: 250px;
+		font-size: 20px;
+	}
+	#galeria{
+		display: none;
+	}
+	#novedades{
+		/*display: none;*/
+	}
+	#novedades .contenido{
+		height: 550px;
+	}
+	#novedades .contenido .centra_contenido{
+		width: 370px;
+	}
+	#novedades .contenido .novedad{
+		width: 100%;
+	}
+	#novedades .contenido .novedad img{
+		display: none;
+	}
+	#novedades .contenido .novedad h1{
+		width: 100%;
+		text-align: left;
+		font-weight: bold;
+		font-family: 'Josefin Sans', sans;
+		font-size: 24px;
+		color: #AD9844;
+		text-transform: uppercase;
+		padding-top: 25px;
+	}
+	#novedades .contenido .novedad p{
+		width: 100%;
+		text-align: left;
+		font-family: 'Alegreya Sans', sans;
+		font-size: 14px;
+	}
+	#contacto form{
+		padding-top: 20px;
+	}
+	#contacto input[type="text"], #contacto textarea,
+	#contacto #enviar{
+		width: 263px;
+	}
+	#contacto .contenido{
+		height: 500px;
+	}
+	#footer{
+		display: none;
+	}
+	#footer-responsive{
+		display: block;
+		padding-top: 35px;           
+		height: 100px;
+		background-color: #ad9844;
+		
+		color: white; 
+		font-family: "Alegreya Sans", sans-serif;
+		text-align: center;
+	}
+	#footer-responsive h3{
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+		
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 300;
+	}
 }

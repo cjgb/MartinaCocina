@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 
-<head>                 
+<head>      
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no">           
+	
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 	<meta name="description" content="Página del MartinaCocina, un restaurante situado en el Rastro de Madrid">
@@ -44,7 +46,7 @@
 
 						<li id="nosotros" target="nosotros" class="nav_link"><a href="">Nosotros</a></li> 
 
-						<li class="nav_separador"></li>
+						<li id="galeria-sep" class="nav_separador"></li>
 
 						<li id="galeria" target="galeria" class="nav_link"><a href="">Galería</a></li>
 
@@ -52,9 +54,13 @@
 
 						<li id="ubicacion" target="ubicacion" class="nav_link"><a href="">Ubicación</a></li>
 
-						<li class="nav_separador"></li>
+						<li id="novedades-sep" class="nav_separador"></li>
 
 						<li id="novedades" target="novedades" class="nav_link"><a href="">Novedades</a></li>					
+						
+						<li id="contacto-sep" class="nav_separador"></li>
+
+						<li id="contacto" target="contacto" class="nav_link"><a href="">Contacto</a></li>
 
 					</div>
 
@@ -88,7 +94,7 @@
 
 			<h1>Nosotros</h1>
 
-			<h3>Martina Cocina, un lugar con encanto</h3>
+			<h3>Martina Cocina,<br class="micro-cut"/> un lugar con encanto</h3>
 
 		</div>
 
@@ -168,7 +174,7 @@
 
 				<h1>Ubicaci&oacute;n</h1>
 
-				<h3>Estamos en en plaza de Cascorro 11, 28005 Madrid</h3>
+				<h3>Estamos en<br class="micro-cut"/> en plaza de Cascorro 11, 28005 Madrid</h3>
 
 			</div>         
 
@@ -197,6 +203,8 @@
 				<div class="centra_contenido">
 
 				<div class="novedad">
+					
+					<h1>Impronta teatro</h1>
 
 					<img src="grf_novedades/novedad1_cuevas_martina.jpg" alt="cuevas martina teatro">
 
@@ -206,6 +214,8 @@
 
 				<div class="novedad">
 
+					<h1>Francisca Antolín</h1>
+
 					<a href="http://franciscantolin.es/"><img src="grf_novedades/piedra_francisca.jpg" alt="piedra francisca"></a>
 
 					<p>Francisca Antolín se ha incorporado a nuestro equipo y es toda una artista. En <a href="http://franciscantolin.es/">su página</a> encontrarás más fotos de sus piedras, muñecas e ilustraciones.</p>
@@ -213,6 +223,8 @@
 				</div>
 
 				<div class="novedad">
+
+					<h1>Redes sociales</h1>
 
 					<img src="grf_novedades/valoracion.png" alt="valoracion">
 
@@ -234,7 +246,7 @@
 
 				<h1>Contacto</h1>
 
-				<h3>Envíanos tu consulta y nos pondremos en contacto contigo.</h3>
+				<h3>Envíanos tu consulta y<br class="micro-cut"/> nos pondremos<br class="micro-cut"/> en contacto contigo.</h3>
 
 			</div>
 
@@ -261,7 +273,9 @@
 			<h3>MARTINA COCINA . info@martinacocina.es .  +34 910834380 .</h3>
 
 		</div>
-
+		<div id="footer-responsive">
+			<h3>MARTINA COCINA <br/> info@martinacocina.es <br/>  +34 910834380</h3>
+		</div>
 </div>                                   
 
 <script type="text/javascript" src="scripts/script.js"></script>
