@@ -657,28 +657,20 @@ a.unslider-arrow.next{
 *********** 320 px *****************************
 ***********************************************/
 @media only screen and (max-width: 478px){
-	.seccion{
-		width: 100%;
-		margin: 0 auto;
-	}
-	html, body{
-		overflow-x: hidden;
+	body{
 		/*background: red;*/
 	}
 	.micro-cut{
 		display: initial;
 	}
-	.titulo h1{
-		padding-top: 20px;
-	}
 	.titulo h3{
-		width: 230px;
+		width: 340px;
 		margin: 0 auto;
 	}
 	#encabezado{
 		width: 100%;
 		height: 360px;
-		padding-top: 270px;
+		padding-top: 300px;
 	}
 	#encabezado #imagen{
 		width: 100%;
@@ -689,7 +681,7 @@ a.unslider-arrow.next{
 		background-repeat: no-repeat;
 	}
 	#menu{
-		height: 270px;
+		height: 300px;
 		position: absolute;
 	}
 	#menu #content{
@@ -704,28 +696,20 @@ a.unslider-arrow.next{
 	}
 	#menu #content #navegacion{
 		width: 100%;
-		overflow: hidden;
-		margin-bottom: 0;
 	}
 	#menu #content #navegacion div{
 		margin: 0 auto;
-		width: 310px;
+		width: 345px;
 	}
 	#menu #content #navegacion li{
-		height: 40px;
-		width: auto;
-		margin-left: 5px;
-		margin-right: 5px;
+		height: 70px;
 	}
 	#menu #content #navegacion li a{
-		display: inline-block;
-		margin-top: 0px;
-		font-size: 14px;
-		width: auto;
+		margin-top: 30px;
+		font-size: 16px;
 	}
 	#menu #content #navegacion li.nav_separador{
-		display: none;
-		height: 50px;
+		height: 70px;
 		background-position: -0% 50px;
 		width: 12px;
 	}
@@ -733,7 +717,10 @@ a.unslider-arrow.next{
 	#menu #content #navegacion #galeria-sep	{
 		display: none;
 	}
-	#menu #content #navegacion #contacto{
+	#menu #content #navegacion #contacto,
+	#menu #content #navegacion #contacto-sep,
+	#menu #content #navegacion #novedades,
+	#menu #content #navegacion #novedades-sep{
 		display: inline-block;
 	}
 	#menu #content #social{
@@ -756,10 +743,10 @@ a.unslider-arrow.next{
 		/*display: none;*/
 	}
 	#novedades .contenido{
-		height: 580px;
+		height: 550px;
 	}
 	#novedades .contenido .centra_contenido{
-		width: 320px;
+		width: 370px;
 	}
 	#novedades .contenido .novedad{
 		width: 100%;
@@ -785,15 +772,13 @@ a.unslider-arrow.next{
 	}
 	#contacto form{
 		padding-top: 20px;
-		width: 320px;
-		margin: 0 auto;
 	}
 	#contacto input[type="text"], #contacto textarea,
 	#contacto #enviar{
 		width: 263px;
 	}
 	#contacto .contenido{
-		height: 580px;
+		height: 500px;
 	}
 	#footer{
 		display: none;

@@ -108,8 +108,13 @@ function initialize() {
 $(".nav_link").click(function(e){
 	e.preventDefault();
 	$auxID = $(this).attr("target");  
+	if($(window).width() <= 768){
+		var offset = 0;
+	}else{
+		var offset = 140
+	}
 	if($auxID){
-		$auxScroll = $("#"+$auxID+" .titulo").offset().top-140;
+		$auxScroll = $("#"+$auxID+" .titulo").offset().top - offset;
 		$('html, body').animate({scrollTop : $auxScroll},800);
 	}                                
 });    
@@ -117,8 +122,12 @@ $(document).scroll(function( ){
 	var actualSection = 0;
 	var auxPosition = $(this).scrollTop();
 	for (index = 0; index < elementsTitle.length; ++index) {
-		if(auxPosition >= elementsTitle[index]){
-			actualSection = index;
+		if(auxPosition < elementsTitle[0]){
+			actualSection = 999;
+		}else{
+			if(auxPosition >= elementsTitle[index]){
+				actualSection = index;
+			}
 		}
 	}                                                            
 	$(".nav_link:eq("+actualSection+")").addClass("arrowed");
