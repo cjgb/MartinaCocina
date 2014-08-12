@@ -267,7 +267,7 @@ a.unslider-arrow.next{
 }
 /* Diapositivas */
 #slide1{
-	background-image: URL("imagenes/1.png");
+	background-image: URL("imagenes/1.jpg");
 }    
 #slide2{
 	background-image: URL("imagenes/2.jpg");
@@ -532,7 +532,7 @@ a.unslider-arrow.next{
 		height: 405px;
 		background-size: 130%;
 		background-position-x: 50%;
-		background-image: URL("imagenes/1.png");
+		background-image: URL("imagenes/1.jpg");
 		background-repeat: no-repeat;
 	}
 	#menu{
@@ -685,7 +685,7 @@ a.unslider-arrow.next{
 		height: 405px;
 		background-size: 190%;
 		background-position-x: 50%;
-		background-image: URL("imagenes/1.png");
+		background-image: URL("imagenes/1.jpg");
 		background-repeat: no-repeat;
 	}
 	#menu{
