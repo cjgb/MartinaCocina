@@ -17,6 +17,12 @@ $correoPOST  = filter_var($_POST['correo'],   FILTER_SANITIZE_EMAIL);
 $mensajePOST = filter_var($_POST['consulta'], FILTER_SANITIZE_STRING);
 $to = "info@martinacocina.es";
 
+
+if(strlen($correoPOST) < 3) { 
+        die('Tienes que proporcionar un correo para que podamos contactarte');
+}
+
+
 $headers = 'From: '.$nombrePOST.' <'.$correoPOST.">\r\n".
     "Reply-To: ".$nombrePOST." <".$correoPOST.">\r\n" .
     'X-Mailer: PHP/' . phpversion();
