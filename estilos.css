@@ -69,7 +69,7 @@ h3{
 #menu #content #navegacion div{
 	width: 455px;
 	margin: 0 auto;
-	whitespace: nowrap;   /* Thanks E. Arizon, 20150109 */
+	white-space: nowrap;   /* Thanks E. Arizon, 20150109 */
 }
 
 #menu #content #navegacion li{
