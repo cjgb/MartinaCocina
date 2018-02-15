@@ -6,11 +6,11 @@ $("#galeria-imagenes #slider").css('width',sliderWidth);
 
 var a = 0;
 var flagRoll = 1;
-function roll(){      
+function roll(){
 	$("#galeria-imagenes #slider").clearQueue();
     $('.unslider-arrow').clearQueue();
 	if(flagRoll == 1){
-   	 $("#galeria-imagenes #slider").animate({"margin-left":"-="+(slideWidth).toString()},1500,function(){ 
+   	 $("#galeria-imagenes #slider").animate({"margin-left":"-="+(slideWidth).toString()},1500,function(){
 			a++;
 			//$("#galeria-imagenes #puntitos li").removeClass("active");
 			//alert(a);
@@ -23,11 +23,11 @@ function roll(){
 			//alert($auxSlide);
 			$("#galeria-imagenes #slider").append($auxSlide);
 			$("#galeria-imagenes #slider").css({'margin-left':'0'});
-		});               		
+		});
 	}
 	setTimeout( roll, 6000);
 }
-$(document).ready(function(){   
+$(document).ready(function(){
 	setTimeout( roll, 5000);
 
 });
@@ -38,48 +38,48 @@ $(".titulo").each(function(index, element){
 });
 
 $('.unslider-arrow').click(function( e ) {
-	e.preventDefault();              
+	e.preventDefault();
 	$("#galeria-imagenes #slider").clearQueue();
     $(this).clearQueue();
 	var fn = this.className.split(' ')[1];
 
     if(fn == "next"){
 		if(flagRoll == 1){
-			flagRoll = 0;         
-	   		$("#galeria-imagenes #slider").animate({"margin-left":"-="+(slideWidth).toString()},1500,function(){ 
+			flagRoll = 0;
+	   		$("#galeria-imagenes #slider").animate({"margin-left":"-="+(slideWidth).toString()},1500,function(){
 					a++;
-					//$("#galeria-imagenes #puntitos li").removeClass("active");          
+					//$("#galeria-imagenes #puntitos li").removeClass("active");
 					/*$("#galeria-imagenes #puntitos li:eq("+a+")").addClass('active');*/
 					if(a == slideQty-1){
 						a = -1;
 					}
-					$auxSlide = $("#galeria-imagenes #slider li")[0];                     
+					$auxSlide = $("#galeria-imagenes #slider li")[0];
 					$("#galeria-imagenes #slider").append($auxSlide);
 					$("#galeria-imagenes #slider").css({'margin-left':'0'});
 					flagRoll = 1;
-			});                    
-		}          
+			});
+		}
 	}else if(fn == "prev"){
 		if(flagRoll == 1){
 			flagRoll = 0;
 			var aux2 = slideQty-1;
-			$auxSlide = $("#galeria-imagenes #slider li")[aux2];       
+			$auxSlide = $("#galeria-imagenes #slider li")[aux2];
 			$("#galeria-imagenes #slider").css({'margin-left':"-="+(slideWidth).toString()});
 			$("#galeria-imagenes #slider").prepend($auxSlide);
 
-	   		$("#galeria-imagenes #slider").animate({"margin-left":"+="+(slideWidth).toString()},1500,function(){ 
+	   		$("#galeria-imagenes #slider").animate({"margin-left":"+="+(slideWidth).toString()},1500,function(){
 					a= a -1;
-					/*$("#galeria-imagenes #puntitos li").removeClass("active");          
+					/*$("#galeria-imagenes #puntitos li").removeClass("active");
 					$("#galeria-imagenes #puntitos li:eq("+a+")").addClass('active');*/
 					if(a == 0){
 						a = slideQty;
 					}
 					flagRoll = 1;
-			});     
+			});
 	}
 }
-    
-});      
+
+});
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(40.4099, -3.707075),
@@ -96,18 +96,18 @@ $('.unslider-arrow').click(function( e ) {
       google.maps.event.addDomListener(window, 'load', initialize);
       //google.maps.event.trigger(map, 'resize');
 /*
-function initialize() {   
+function initialize() {
 	var tiles = new MM.TemplatedLayer("http://tile.stamen.com/toner/{Z}/{X}/{Y}.png");
 	var map = new MM.Map("mapa-ubicacion", tiles);
-	
-	// center on Amsterdam, Netherlands                    
+
+	// center on Amsterdam, Netherlands
 	//40.41136/-3.70834
 	map.setCenterZoom(new MM.Location(40.41136,-3.70834), 18);
 }
-*/                  
+*/
 $(".nav_link").click(function(e){
 	e.preventDefault();
-	$auxID = $(this).attr("target");  
+	$auxID = $(this).attr("target");
 	if($(window).width() <= 768){
 		var offset = 0;
 	}else{
@@ -116,9 +116,9 @@ $(".nav_link").click(function(e){
 	if($auxID){
 		$auxScroll = $("#"+$auxID+" .titulo").offset().top - offset;
 		$('html, body').animate({scrollTop : $auxScroll},800);
-	}                                
-});    
-$(document).scroll(function( ){  
+	}
+});
+$(document).scroll(function( ){
 	var actualSection = 0;
 	var auxPosition = $(this).scrollTop();
 	for (index = 0; index < elementsTitle.length; ++index) {
@@ -129,11 +129,13 @@ $(document).scroll(function( ){
 				actualSection = index;
 			}
 		}
-	}                                                            
+	}
 	$(".nav_link:eq("+actualSection+")").addClass("arrowed");
 	$(".nav_link:not(:eq("+actualSection+"))").removeClass("arrowed");
 
 });
+
+/* adapted to Netlify form system
 $("#enviar").click(function(e){
 	e.preventDefault();
 	$dataToSend = {
@@ -149,7 +151,8 @@ $("#enviar").click(function(e){
 			alert(data);
 		}
 	});
-	
+*/
+
 });
 $("#logo").click(function( e ){
 	e.preventDefault();
