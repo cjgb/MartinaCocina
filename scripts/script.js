@@ -151,9 +151,8 @@ $("#enviar").click(function(e){
 			alert(data);
 		}
 	});
-*/
+});*/
 
-});
 $("#logo").click(function( e ){
 	e.preventDefault();
 	$('html, body').animate({scrollTop : 0},800);
