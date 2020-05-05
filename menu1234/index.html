@@ -24,15 +24,14 @@
 
     <!-- Sidebar -->
     <div class="bg-light position-fixed border-right sticky-offset" id="sidebar-wrapper">
-      <div class="sidebar-heading">Menú </div>
+      <!-- <div class="sidebar-heading">Menú </div> -->
       <div class="list-group list-group-flush">
         <a href="#cerveza" class="list-group-item list-group-item-action bg-light">Cervezas</a>
         <a href="#vino" class="list-group-item list-group-item-action bg-light">Vinos</a>
         <a href="#copas" class="list-group-item list-group-item-action bg-light">Copas</a>
         <a href="#tartas" class="list-group-item list-group-item-action bg-light">Tartas y dulces</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="#cafes" class="list-group-item list-group-item-action bg-light">Cafés y tés</a>
+        <a href="#refrescos" class="list-group-item list-group-item-action bg-light">Refrescos</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -200,53 +199,134 @@
           <tbody>
             <tr>
               <td>Tartas (zanahoria; cocolate y dulce de leche: queso; coco y dulce de leche; del día)</td>
-              <td>5.00€</td>
+              <td class="text-right">5.00€</td>
             </tr>
             <tr>
               <td>Crumble/Bronie</td>
-              <td>3.90€</td>
+              <td class="text-right">3.90€</td>
             </tr>
             <tr>
               <td>Alfajores de maicena</td>
-              <td>2.80€</td>
+              <td class="text-right">2.80€</td>
             </tr>
             <tr>
               <td>Nata portuguesa</td>
-              <td>1.50€</td>
+              <td class="text-right">1.50€</td>
             </tr>
             <tr>
               <td>Cookies veganas</td>
-              <td>2.20€</td>
+              <td class="text-right">2.20€</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div id="cafe" class="container-fluid">
+        <h1 class="mt-4">Cafés y tés</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio terraza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Café solo/cortado</td>
+              <td class="text-right">1.60€</td>
+            </tr>
+            <tr>
+              <td>Café con leche</td>
+              <td class="text-right">1.70€</td>
+            </tr>
+            <tr>
+              <td>Café doble</td>
+              <td class="text-right">2.20€</td>
+            </tr>
+            <tr>
+              <td>Café XXL</td>
+              <td class="text-right">2.70€</td>
+            </tr>
+            <tr>
+              <td>Capuchino/bombón</td>
+              <td class="text-right">3.30€</td>
+            </tr>
+            <tr>
+              <td>Capuchino helado</td>
+              <td class="text-right">3.90€</td>
+            </tr>
+            <tr>
+              <td>Café con licor</td>
+              <td class="text-right">2.80€</td>
+            </tr>
+            <tr>
+              <td>Vaso de leche</td>
+              <td class="text-right">1.30€</td>
+            </tr>
+            <tr>
+              <td>Chocolate</td>
+              <td class="text-right">2.50€</td>
+            </tr>
+            <tr>
+              <td>Colacao</td>
+              <td class="text-right">1.70€</td>
+            </tr>
+            <tr>
+              <td>Té normal / orgánico</td>
+              <td class="text-right">2.40€</td>
+            </tr>
+            <tr>
+              <td>Cafés del mundo (Jamaica, etc.)</td>
+              <td class="text-right">3.40€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="refrescos" class="container-fluid">
+        <h1 class="mt-4">Refrescos</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio terraza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Refrescos</td>
+              <td class="text-right">2.50€</td>
+            </tr>
+            <tr>
+              <td>Agua con/sin gas</td>
+              <td class="text-right">2.20€ / 1.70€</td>
+            </tr>
+            <tr>
+              <td>Zumo de tomate / Mosto</td>
+              <td class="text-right">2.20€</td>
+            </tr>
+            <tr>
+              <td>Zumo de fruta casero</td>
+              <td class="text-right">4.40€</td>
+            </tr>
+            <tr>
+              <td>Zumo de naranja grande / pequeño</td>
+              <td class="text-right">4.40€ / 2.80€</td>
+            </tr>
+            <tr>
+              <td>Limonada casera / con jengibre y/o hierbabuena</td>
+              <td class="text-right">3.90€ / 4.20€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="asdfsdf" class="container-fluid">
         <h1 class="mt-4">Simple Sidebar</h1>
         <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
       </div>
-      <div id="cerveza" class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-      </div>
-      <div id="cerveza" class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-      </div>
-      <div id="cerveza" class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-      </div>
-      <div id="cerveza" class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-      </div>
+
     </div>
     <!-- /#page-content-wrapper -->
 
